@@ -1,0 +1,5 @@
+node_modules
+umzug.json
+.tmp
+coverage
+.nyc_output

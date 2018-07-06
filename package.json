@@ -1,0 +1,47 @@
+{
+  "name": "node-bono-example",
+  "version": "0.0.1",
+  "description": "Node Bono Example for API",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npx mocha test/**",
+    "coverage": "npx nyc --reporter=lcov npm test",
+    "start": "node server.js",
+    "dev": "npx nodemon server.js",
+    "migrate": "node ./migrate.js",
+    "precommit": "npm run lint && npm test",
+    "prepush": "npm run lint && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reekoheek/node-bono-example.git"
+  },
+  "keywords": [
+    "node",
+    "bono",
+    "example",
+    "api"
+  ],
+  "author": "Ganesha <reekoheek@gmail.com> (http://sagara.id)",
+  "license": "MIT",
+  "dependencies": {
+    "bono": "^0.3.5",
+    "bono-norm": "^1.1.2",
+    "debug": "^3.1.0",
+    "node-norm": "^0.6.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-xinix": "^1.0.4",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "husky": "^0.14.3",
+    "supertest": "^3.1.0",
+    "umzug": "^2.1.0"
+  }
+}
